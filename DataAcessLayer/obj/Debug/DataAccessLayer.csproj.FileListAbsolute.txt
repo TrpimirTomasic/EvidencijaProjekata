@@ -1,0 +1,7 @@
+D:\Projekt\EvidencijaProjekata\DataAcessLayer\bin\Debug\DataAcessLayer.dll
+D:\Projekt\EvidencijaProjekata\DataAcessLayer\bin\Debug\DataAcessLayer.pdb
+D:\Projekt\EvidencijaProjekata\DataAcessLayer\bin\Debug\Newtonsoft.Json.dll
+D:\Projekt\EvidencijaProjekata\DataAcessLayer\bin\Debug\Newtonsoft.Json.pdb
+D:\Projekt\EvidencijaProjekata\DataAcessLayer\bin\Debug\Newtonsoft.Json.xml
+D:\Projekt\EvidencijaProjekata\DataAcessLayer\obj\Debug\DataAcessLayer.dll
+D:\Projekt\EvidencijaProjekata\DataAcessLayer\obj\Debug\DataAcessLayer.pdb
