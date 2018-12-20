@@ -11,7 +11,7 @@ namespace DataAccessLayer.Entities
         public int id { get; set; }
         public string name { get; set; }
         public string description { get; set; }
-       // public DateTime deadline { get; set; }
+       public DateTime deadline { get; set; }
         public int manager { get; set; }
         public int category { get; set; }
     }

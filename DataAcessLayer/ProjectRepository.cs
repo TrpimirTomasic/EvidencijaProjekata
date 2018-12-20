@@ -14,7 +14,7 @@ namespace DataAcessLayer
     {
 
         string connectionString = "Data Source=193.198.57.183; Initial Catalog = DotNet;User ID = vjezbe; Password = vjezbe";
-        public List<Project> GetProjects() //radi
+        public List<Project> GetProjects() 
         {
             List<Project> project = new List<Project>();
             using (DbConnection connection = new SqlConnection(connectionString))
@@ -31,7 +31,7 @@ namespace DataAcessLayer
                             id = (int)reader["Id"],
                             name = (string)reader["Name"],
                            description = (string)reader["Description"],
-                            //deadline = (DateTime)reader["Deadline"],
+                            deadline = (DateTime)reader["Deadline"],
                             manager = (int)reader["Manager"],
                             category = (int)reader["Category"]
                          });
@@ -43,7 +43,7 @@ namespace DataAcessLayer
         }
 
         //Conversion failed when converting date and/or time from character string.
-        public void AddProject(Project project) //radi
+        public void AddProject(Project project) 
         {
             using (DbConnection connection = new SqlConnection(connectionString))
             using (DbCommand command = connection.CreateCommand())
@@ -58,7 +58,7 @@ namespace DataAcessLayer
             }
 
         }
-        public void DeleteProject(Project project) //radi
+        public void DeleteProject(Project project) 
         {
             using (DbConnection connection = new SqlConnection(connectionString))
             using (DbCommand command = connection.CreateCommand())
@@ -73,13 +73,13 @@ namespace DataAcessLayer
             }
 
         }
-        public void EditProject(Project project)//radi
+        public void EditProject(Project project)
         {
             using (DbConnection connection = new SqlConnection(connectionString))
             using (DbCommand command = connection.CreateCommand())
             {
-                //command.CommandText = "UPDATE Project_Project SET Name='" + project.name + "', Description='"+ project.description +"', Deadline='"+ project.deadline+"', Manager = '" + project.manager+ "', Category='" + project.category +"' WHERE Id=" + project.id;
-                command.CommandText = "UPDATE Project_Project SET Name='" + project.name + "', Description='" + project.description + "', Manager = '" + project.manager + "', Category='" + project.category + "' WHERE Id=" + project.id;
+                command.CommandText = "UPDATE Project_Project SET Name='" + project.name + "', Description='"+ project.description +"', Deadline='"+ project.deadline+"', Manager = '" + project.manager+ "', Category='" + project.category +"' WHERE Id=" + project.id;
+                // command.CommandText = "UPDATE Project_Project SET Name='" + project.name + "', Description='" + project.description + "', Manager = '" + project.manager + "', Category='" + project.category + "' WHERE Id=" + project.id;
                 connection.Open();
                 using (DbDataReader reader = command.ExecuteReader())
                 {

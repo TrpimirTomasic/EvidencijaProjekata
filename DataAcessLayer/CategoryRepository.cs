@@ -7,17 +7,17 @@ using System.Text;
 using System.Threading.Tasks;
 using DataAccessLayer.Entities;
 
-// add delete edit get
+
 namespace DataAccessLayer
 {
     public class CategoryRepository
     {
         string connectionString = "Data Source=193.198.57.183; Initial Catalog = DotNet;User ID = vjezbe; Password = vjezbe";
-        public List<Category> GetAllCategories() //radi
+        public List<Category> GetAllCategories() 
         {
             List<Category> category = new List<Category>();
-            using (DbConnection connection = new SqlConnection(connectionString)) // povezivanje na bazu preko stringa
-            using (DbCommand command = connection.CreateCommand()) // pripremanje query-a za čitanje iz baze
+            using (DbConnection connection = new SqlConnection(connectionString)) 
+            using (DbCommand command = connection.CreateCommand()) 
             {
                 command.CommandText = "SELECT * FROM Project_Category";
                 connection.Open();
@@ -36,7 +36,7 @@ namespace DataAccessLayer
             }
             return category;
         }
-        public void AddCategory(Category category) //radi
+        public void AddCategory(Category category) 
         {
             using (DbConnection connection = new SqlConnection(connectionString)) 
             using (DbCommand command = connection.CreateCommand()) 
@@ -50,7 +50,7 @@ namespace DataAccessLayer
             }
 
         }
-        public void DeleteCategory(Category category) //radi
+        public void DeleteCategory(Category category)
         {
             using (DbConnection connection = new SqlConnection(connectionString))
             using (DbCommand command = connection.CreateCommand())
@@ -65,7 +65,7 @@ namespace DataAccessLayer
             }
 
         }
-        public void EditCategory(Category category)//radi
+        public void EditCategory(Category category)
         {
             using (DbConnection connection = new SqlConnection(connectionString))
             using (DbCommand command = connection.CreateCommand())
