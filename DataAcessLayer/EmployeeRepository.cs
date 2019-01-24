@@ -6,13 +6,21 @@ using System.Threading.Tasks;
 using DataAccessLayer.Entities;
 using System.Data.Common;
 using System.Data.SqlClient;
-
+using DataAcessLayer.ViewModels;
 namespace DataAcessLayer
 {
+
+
     public class EmployeeRepository
     {
         string connectionString = "Data Source=193.198.57.183; Initial Catalog = DotNet;User ID = vjezbe; Password = vjezbe";
-        public List<Employee> GetEmployees() //radi
+        List<Employee> _employee = new List<Employee>();
+        public EmployeeRepository()
+        {
+            _employee = GetEmployees();
+        }
+
+        public List<Employee> GetEmployees() 
         {
             List<Employee> employee = new List<Employee>();
             using (DbConnection connection = new SqlConnection(connectionString)) 
@@ -36,7 +44,9 @@ namespace DataAcessLayer
             }
             return employee;
         }
-        public void AddEmployee(Employee employee) //radi
+
+
+        public void AddEmployee(Employee employee) 
         {
             using (DbConnection connection = new SqlConnection(connectionString))
             using (DbCommand command = connection.CreateCommand())
@@ -50,7 +60,7 @@ namespace DataAcessLayer
             }
 
         }
-        public void DeleteEmployee(Employee employee) //radi
+        public void DeleteEmployee(Employee employee) 
         {
             using (DbConnection connection = new SqlConnection(connectionString))
             using (DbCommand command = connection.CreateCommand())
@@ -65,7 +75,7 @@ namespace DataAcessLayer
             }
 
         }
-        public void EditEmployee(Employee employee) //radi
+        public void EditEmployee(Employee employee) 
         {
             using (DbConnection connection = new SqlConnection(connectionString))
             using (DbCommand command = connection.CreateCommand())
@@ -79,6 +89,26 @@ namespace DataAcessLayer
 
             }
 
+        }
+
+        public int GetEmployeeID(string name)
+        {
+            int employee = 0;
+            using (DbConnection connection = new SqlConnection(connectionString))
+            using (DbCommand command = connection.CreateCommand())
+            {
+                command.CommandText = "SELECT * FROM Project_Employee WHERE CONVERT(VARCHAR, Name) ='"+ name +"'";
+                connection.Open();
+                using (DbDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                      employee = (int)reader["Id"];
+                    }
+                }
+
+            }
+            return employee;
         }
     }
 }

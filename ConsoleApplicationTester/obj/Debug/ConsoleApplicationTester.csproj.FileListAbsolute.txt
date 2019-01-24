@@ -1,11 +1,11 @@
-D:\Projekt\EvidencijaProjekata\ConsoleApplicationTester\obj\Debug\ConsoleApplicationTester.csprojResolveAssemblyReference.cache
 D:\Projekt\EvidencijaProjekata\ConsoleApplicationTester\bin\Debug\ConsoleApplicationTester.exe.config
 D:\Projekt\EvidencijaProjekata\ConsoleApplicationTester\bin\Debug\ConsoleApplicationTester.exe
 D:\Projekt\EvidencijaProjekata\ConsoleApplicationTester\bin\Debug\ConsoleApplicationTester.pdb
+D:\Projekt\EvidencijaProjekata\ConsoleApplicationTester\bin\Debug\DataAcessLayer.dll
 D:\Projekt\EvidencijaProjekata\ConsoleApplicationTester\bin\Debug\Newtonsoft.Json.dll
 D:\Projekt\EvidencijaProjekata\ConsoleApplicationTester\bin\Debug\DataAcessLayer.pdb
 D:\Projekt\EvidencijaProjekata\ConsoleApplicationTester\bin\Debug\Newtonsoft.Json.pdb
 D:\Projekt\EvidencijaProjekata\ConsoleApplicationTester\bin\Debug\Newtonsoft.Json.xml
+D:\Projekt\EvidencijaProjekata\ConsoleApplicationTester\obj\Debug\ConsoleApplicationTester.csprojResolveAssemblyReference.cache
 D:\Projekt\EvidencijaProjekata\ConsoleApplicationTester\obj\Debug\ConsoleApplicationTester.exe
 D:\Projekt\EvidencijaProjekata\ConsoleApplicationTester\obj\Debug\ConsoleApplicationTester.pdb
-D:\Projekt\EvidencijaProjekata\ConsoleApplicationTester\bin\Debug\DataAcessLayer.dll

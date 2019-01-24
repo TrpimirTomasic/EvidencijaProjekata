@@ -29,13 +29,14 @@ namespace ConsoleApplicationTester
             //    Console.WriteLine(employee.id + " " + employee.name + " " + employee.surname);
             //}
 
-         
 
-            var projRepo = new ProjectRepository();   
-            var projects = projRepo.GetProjects();  
+            var projRepo = new ProjectRepository();
+    
+            var projects = projRepo.GetProjectsForView();
+          
             foreach (var project in projects)
             {
-                Console.WriteLine(project.id + " " + project.name +" "+ project.deadline + " " + project.description);
+                Console.WriteLine(project.name);
             }
 
             //Project _project = new Project();

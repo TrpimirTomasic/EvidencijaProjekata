@@ -1,0 +1,11 @@
+D:\Projekt\EvidencijaProjekata\PresentationLayer\bin\Debug\PresentationLayer.exe.config
+D:\Projekt\EvidencijaProjekata\PresentationLayer\bin\Debug\PresentationLayer.exe
+D:\Projekt\EvidencijaProjekata\PresentationLayer\bin\Debug\PresentationLayer.pdb
+D:\Projekt\EvidencijaProjekata\PresentationLayer\bin\Debug\DataAcessLayer.pdb
+D:\Projekt\EvidencijaProjekata\PresentationLayer\obj\Debug\PresentationLayer.csprojResolveAssemblyReference.cache
+D:\Projekt\EvidencijaProjekata\PresentationLayer\obj\Debug\PresentationLayer.Form1.resources
+D:\Projekt\EvidencijaProjekata\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
+D:\Projekt\EvidencijaProjekata\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.Cache
+D:\Projekt\EvidencijaProjekata\PresentationLayer\obj\Debug\PresentationLayer.exe
+D:\Projekt\EvidencijaProjekata\PresentationLayer\obj\Debug\PresentationLayer.pdb
+D:\Projekt\EvidencijaProjekata\PresentationLayer\bin\Debug\DataAcessLayer.dll
